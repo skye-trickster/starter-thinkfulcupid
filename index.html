@@ -34,6 +34,39 @@
       <!-- Join -->
       <section id="join">
         <img src="images/love.png" alt="ThinkfulCupid - love" />
+        <form action="#" method="get">
+          <fieldset>
+            <div class="field">
+              <label name="email" for="email">Email</label>
+              <input type="email" name="email" id="email" required autofocus="on" placeholder="email@example.com">  
+            </div>
+
+            <div class="field">
+              <label name="password" for="password">Create a password</label>
+              <input type="password" name="password" id="password" required>
+            </div>
+
+            <div class="field">
+              <label name="username" for="username">Username</label>
+              <input type="username" name="username" id="username" required>
+            </div>
+
+            <div class="field">
+              <label name="gender" for="gender">I am a...</label>
+              <select name="gender" id="gender" size="1">
+                <option value="female">female</option>
+                <option>male</option>
+                <option>X-gender / nonbinary</option>
+                <option>bigender</option>
+                <option>none</option>
+                <option>other</option>
+                <option>I prefer not to say.</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="join">Join</button>
+          </fieldset>
+        </form>
         <!-- Add join form here -->
       </section>
 
