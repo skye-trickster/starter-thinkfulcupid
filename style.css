@@ -86,6 +86,11 @@ form {
   padding: 10px;
 }
 
+.field {
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -103,6 +108,14 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+form button:hover {
+  cursor:pointer;
+}
+
+form button:active{
+  background-color: #650015;
 }
 
 /* -------  Footer ------- */
