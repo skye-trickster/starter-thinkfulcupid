@@ -7,7 +7,7 @@ body {
 
 h2 {
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 10px 15px 10px;
   text-align: center;
 }
@@ -44,12 +44,18 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 15px 0;
 }
 
 .item-double {
   flex: 2;
+  margin: 15px 0;
 }
+
+.group img {
+  width: 100%;
+}
+
 
 /* -------  Navigation ------- */
 
@@ -69,10 +75,25 @@ header nav ul li {
   list-style-type: none;
 }
 
+header nav {
+  padding-bottom: 3px;
+}
+
+header nav ul {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+}
+
 header nav ul li a {
   color: #ecdbc9;
+  font-weight:bold;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 10px;
+}
+
+header nav ul li:last-child a {
+  padding: 0px;
 }
 
 header nav ul li a:hover {
@@ -83,11 +104,16 @@ header nav ul li a:hover {
 /* -------  Join Form ------- */
 form {
   border: 2px solid #6b1a22;
-  padding: 10px;
+  padding: 15px;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
 }
 
 form label {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 form select,
@@ -105,6 +131,14 @@ form button {
   width: 100%;
 }
 
+form button:hover {
+  cursor:pointer;
+}
+
+form button:active{
+  background-color: #650015;
+}
+
 /* -------  Footer ------- */
 
 footer {
@@ -118,3 +152,35 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px)
+{
+  header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .item-double {
+    margin: 10px;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+}
