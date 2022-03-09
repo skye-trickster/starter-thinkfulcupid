@@ -56,10 +56,6 @@ main img {
   width: 100%;
 }
 
-.blog-item {
-  flex: 1;
-  margin: 10px 0;
-}
 
 /* -------  Navigation ------- */
 
@@ -156,3 +152,35 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px)
+{
+  header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .item-double {
+    margin: 10px;
+  }
+
+  .item {
+    margin: 10px;
+  }
+
+}
