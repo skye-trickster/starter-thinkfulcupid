@@ -52,7 +52,8 @@ main img {
   margin: 15px 0;
 }
 
-.group img {
+/* Stretches things like images in a group to 100% */
+.stretch { 
   width: 100%;
 }
 
@@ -75,11 +76,11 @@ header nav ul li {
   list-style-type: none;
 }
 
-header nav {
+.menu {
   padding-bottom: 3px;
 }
 
-header nav ul {
+.menu ul {
   display: flex;
   padding: 0px;
   justify-content: center;
@@ -90,10 +91,6 @@ header nav ul li a {
   font-weight:bold;
   text-decoration: none;
   padding: 0 10px;
-}
-
-header nav ul li:last-child a {
-  padding: 0px;
 }
 
 header nav ul li a:hover {
@@ -113,7 +110,7 @@ form {
 }
 
 form label {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 form select,
@@ -131,11 +128,11 @@ form button {
   width: 100%;
 }
 
-form button:hover {
+.join:hover {
   cursor:pointer;
 }
 
-form button:active{
+.join:active{
   background-color: #650015;
 }
 
@@ -155,7 +152,6 @@ footer p {
 @media all and (min-width: 480px)
 {
   header {
-    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
